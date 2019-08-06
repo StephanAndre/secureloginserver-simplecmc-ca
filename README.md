@@ -1,4 +1,4 @@
-# secureloginserver-simplecmc-ca
+# secureloginserver-simplecmc-ca-demo
 A simple CA with SIMPLE-CMC protocol support to test with a Secure Login Server.
 
 This is just a demo. Do not use it for productive systems.
