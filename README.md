@@ -1,10 +1,15 @@
-# simple-cmc-ca
-A simple CA with SIMPLE-CMC protocol support (to test with a Secure Login Server)
+# secureloginserver-simplecmc-ca
+A simple CA with SIMPLE-CMC protocol support to test with a Secure Login Server.
 
+This is just a demo. Do not use it for productive systems.
+
+Free to use according to SAP Sample Code License Agreement v1.0.pdf.
+
+## installation
 Put all files to a new folder in a server that can be reached by your SLS (e.g. same system).
 
+Then run
 ```
-certify.sh
 create-ca.sh
 python simple-cmc-ca.py --port 8000 --post ON
 ```
@@ -13,10 +18,11 @@ In AS JAVA, create a new HTTP Destination with URL = http://sso.mo.sap.corp:8000
 
 Test with ping should work and make your python server print out a line.
 
-Create a new SLS Remote CA of type "CMC - Simple".
+Create a new SLS Remote CA of type "CMC - Simple" and select the new HTTP Destination.
 
 Enable Remote CA should work.
 
+## test
 Use with your certificate lifecycle client:
 
 ```
